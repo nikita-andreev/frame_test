@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.applitools.app.FrameTest" time="18.47" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/nsa/workspace/frame_test/java/frame-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/nsa/workspace/frame_test/java/frame-test"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-57-generic"/>
+    <property name="user.home" value="/home/nsa"/>
+    <property name="user.timezone" value="Europe/Zaporozhye"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="nsa"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testFrame" classname="com.applitools.app.FrameTest" time="18.47">
+    <error message="(x + width) is outside of Raster" type="java.awt.image.RasterFormatException">java.awt.image.RasterFormatException: (x + width) is outside of Raster
+	at sun.awt.image.ByteInterleavedRaster.createWritableChild(ByteInterleavedRaster.java:1245)
+	at java.awt.image.BufferedImage.getSubimage(BufferedImage.java:1202)
+	at com.applitools.utils.ImageUtils.getImagePart(ImageUtils.java:164)
+	at com.applitools.eyes.FullPageCaptureAlgorithm.getStitchedRegion(FullPageCaptureAlgorithm.java:233)
+	at com.applitools.eyes.Eyes.getScreenshot(Eyes.java:1881)
+	at com.applitools.eyes.EyesBase.getAppOutputWithScreenshot(EyesBase.java:1441)
+	at com.applitools.eyes.EyesBase.access$000(EyesBase.java:16)
+	at com.applitools.eyes.EyesBase$1.getAppOutput(EyesBase.java:1004)
+	at com.applitools.eyes.MatchWindowTask.matchWindow(MatchWindowTask.java:117)
+	at com.applitools.eyes.EyesBase.checkWindowBase(EyesBase.java:1012)
+	at com.applitools.eyes.Eyes.checkCurrentFrame(Eyes.java:1209)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1275)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1418)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1432)
+	at com.applitools.app.FrameTest.testFrame(FrameTest.java:54)
+</error>
+    <system-out><![CDATA[2016-12-26T17:28:22Z Eyes: openBase():Agent = eyes.selenium.java/2.50
+2016-12-26T17:28:22Z Eyes: openBase():openBase('frames_111', 'frames_test_222', '1024x440')
+2016-12-26T17:28:22Z Eyes: openBase():Eyes server URL is 'https://eyessdk.applitools.com'
+2016-12-26T17:28:22Z Eyes: openBase():Timeout = '300000'
+2016-12-26T17:28:22Z Eyes: openBase():matchTimeout = '2' 
+2016-12-26T17:28:22Z Eyes: openBase():Default match settings = 'Match level: STRICT, Exact match settings: null' 
+2016-12-26T17:28:22Z Eyes: openBase():FailureReports = 'ON_CLOSE' 
+2016-12-26T17:28:22Z Eyes: <init>():Driver session is b5582e6a0cf8b8da9e95d352ecb9a72f
+2016-12-26T17:28:24Z Eyes: checkWindow():CheckWindow(-1, 'First page with all frames')
+2016-12-26T17:28:24Z Eyes: checkWindowBase():CheckWindowBase(regionProvider, 'First page with all frames', false, -1)
+2016-12-26T17:28:24Z Eyes: checkWindowBase():No running session, calling start session..
+2016-12-26T17:28:24Z Eyes: startSession():startSession()
+2016-12-26T17:28:24Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:24Z Eyes: <init>():Done!
+2016-12-26T17:28:24Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:24Z Eyes: defaultContent():EyesTargetLocator.defaultContent()
+2016-12-26T17:28:24Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:24Z Eyes: <init>():Done!
+2016-12-26T17:28:24Z Eyes: setViewportSize():setViewportSize(1024x440)
+2016-12-26T17:28:24Z Eyes: extractViewportSize():extractViewportSize()
+2016-12-26T17:28:24Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:24Z Eyes: executeScript():Done!
+2016-12-26T17:28:24Z Eyes: setViewportSize():Initial viewport size:902x950
+2016-12-26T17:28:24Z Eyes: setViewportSize():Current browser size: (912, 1036)
+2016-12-26T17:28:24Z Eyes: setViewportSize():Trying to set browser size to: (1034, 526)
+2016-12-26T17:28:25Z Eyes: setViewportSize():Current browser size: (1034, 526)
+2016-12-26T17:28:25Z Eyes: extractViewportSize():extractViewportSize()
+2016-12-26T17:28:25Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:25Z Eyes: executeScript():Done!
+2016-12-26T17:28:25Z Eyes: setViewportSize():Current viewport size: 1024x440
+2016-12-26T17:28:25Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:25Z Eyes: frames():EyesTargetLocator.frames(frameChain)
+2016-12-26T17:28:25Z Eyes: frames():Done switching into nested frames!
+2016-12-26T17:28:25Z Eyes: startSession():No batch set
+2016-12-26T17:28:25Z Eyes: getUserAgent():user agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+2016-12-26T17:28:25Z Eyes: getAppEnvironment():No OS set, checking for mobile OS...
+2016-12-26T17:28:25Z Eyes: getAppEnvironment():No mobile OS detected.
+2016-12-26T17:28:25Z Eyes: getAppEnvironment():Done!
+2016-12-26T17:28:25Z Eyes: startSession():Application environment is [os = ? hostingApp = ? displaySize = 1024x440]
+2016-12-26T17:28:25Z Eyes: startSession():Starting server session...
+2016-12-26T17:28:27Z Eyes: startSession():Server session ID is MDAwMDAyNTE5MTk1Mjc0OTQ4ODA~;MDAwMDAyNTE5MTk1Mjc0OTQ1ODE~
+2016-12-26T17:28:27Z Eyes: startSession():--- Test started - 'frames_test_222' of 'frames_111' [os = ? hostingApp = ? displaySize = 1024x440]
+2016-12-26T17:28:27Z Eyes: checkWindowBase():Done!
+2016-12-26T17:28:27Z Eyes: checkWindowBase():Calling match window...
+2016-12-26T17:28:27Z Eyes: matchWindow():retryTimeout = 2000
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:27Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:27Z Eyes: updateScalingParams():Trying to extract device pixel ratio...
+2016-12-26T17:28:27Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:27Z Eyes: executeScript():Done!
+2016-12-26T17:28:27Z Eyes: updateScalingParams():Device pixel ratio: 1.000000
+2016-12-26T17:28:27Z Eyes: updateScalingParams():Setting scale provider..
+2016-12-26T17:28:27Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:27Z Eyes: executeScript():Done!
+2016-12-26T17:28:27Z Eyes: getEntireSize():Entire size: 1009x501
+2016-12-26T17:28:27Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:27Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:27Z Eyes: <init>():Done!
+2016-12-26T17:28:27Z Eyes: getDefaultContentViewportSize():Extracting viewport size...
+2016-12-26T17:28:27Z Eyes: extractViewportSize():extractViewportSize()
+2016-12-26T17:28:27Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:27Z Eyes: executeScript():Done!
+2016-12-26T17:28:27Z Eyes: getDefaultContentViewportSize():Done! Viewport size: 1024x440
+2016-12-26T17:28:27Z Eyes: updateScalingParams():Done!
+2016-12-26T17:28:27Z Eyes: getScreenshot():Screenshot requested...
+2016-12-26T17:28:27Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:27Z Eyes: getScreenshot():Done! Creating image object...
+2016-12-26T17:28:27Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:27Z Eyes: getScreenshot():Creating screenshot object...
+2016-12-26T17:28:27Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:27Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:27Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:27Z Eyes: <init>():Done!
+2016-12-26T17:28:27Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:27Z Eyes: executeScript():Done!
+2016-12-26T17:28:27Z Eyes: getEntireSize():Entire size: 1009x501
+2016-12-26T17:28:27Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:27Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:27Z Eyes: executeScript():Done!
+2016-12-26T17:28:27Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:27Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:27Z Eyes: <init>():Done!
+2016-12-26T17:28:27Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():Done getting screenshot!
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():Compressing screenshot...
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():Done! Getting title...
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:27Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:28Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:28Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:28Z Eyes: getScreenshot():Screenshot requested...
+2016-12-26T17:28:29Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:29Z Eyes: getScreenshot():Done! Creating image object...
+2016-12-26T17:28:29Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:29Z Eyes: getScreenshot():Creating screenshot object...
+2016-12-26T17:28:29Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:29Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:29Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:29Z Eyes: <init>():Done!
+2016-12-26T17:28:29Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:29Z Eyes: executeScript():Done!
+2016-12-26T17:28:29Z Eyes: getEntireSize():Entire size: 1009x501
+2016-12-26T17:28:29Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:29Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:29Z Eyes: executeScript():Done!
+2016-12-26T17:28:29Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:29Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:29Z Eyes: <init>():Done!
+2016-12-26T17:28:29Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:29Z Eyes: getAppOutputWithScreenshot():Done getting screenshot!
+2016-12-26T17:28:29Z Eyes: getAppOutputWithScreenshot():Compressing screenshot...
+2016-12-26T17:28:29Z Eyes: getAppOutputWithScreenshot():Done! Getting title...
+2016-12-26T17:28:29Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:29Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:29Z Eyes: matchWindow():Completed in  2.00 seconds
+2016-12-26T17:28:29Z Eyes: checkWindowBase():MatchWindow Done!
+2016-12-26T17:28:29Z Eyes: checkWindowBase():Done!
+2016-12-26T17:28:29Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:29Z Eyes: executeScript():Done!
+2016-12-26T17:28:29Z Eyes: checkFrame():CheckFrame(frame_to_test, -1, 'test frame0')
+2016-12-26T17:28:29Z Eyes: checkFrame():Switching to frame with name/id: frame_to_test ...
+2016-12-26T17:28:29Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:29Z Eyes: frame():EyesTargetLocator.frame('frame_to_test')
+2016-12-26T17:28:29Z Eyes: frame():Getting frames by name...
+2016-12-26T17:28:30Z Eyes: frame():No frames Found! Trying by id...
+2016-12-26T17:28:30Z Eyes: frame():Done! Making preparations..
+2016-12-26T17:28:30Z Eyes: willSwitchToFrame():willSwitchToFrame()
+2016-12-26T17:28:30Z Eyes: willSwitchToFrame():Frame
+2016-12-26T17:28:30Z Eyes: getLocation():BordersAdditionFrameLocationProvider(logger, element, (35, 71))
+2016-12-26T17:28:30Z Eyes: getLocation():Get element border left width...
+2016-12-26T17:28:30Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getLocation():Done!
+2016-12-26T17:28:30Z Eyes: getLocation():border-left-width: 2
+2016-12-26T17:28:30Z Eyes: getLocation():Get element's border top width...
+2016-12-26T17:28:30Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getLocation():Done!
+2016-12-26T17:28:30Z Eyes: getLocation():border-top-width: 2
+2016-12-26T17:28:30Z Eyes: getLocation():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 30)
+2016-12-26T17:28:30Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:30Z Eyes: willSwitchToFrame():Done!
+2016-12-26T17:28:30Z Eyes: frame():Done! Switching to frame...
+2016-12-26T17:28:30Z Eyes: frame():Done!
+2016-12-26T17:28:30Z Eyes: checkFrame():Done.
+2016-12-26T17:28:30Z Eyes: checkCurrentFrame():CheckCurrentFrame(-1, 'test frame0')
+2016-12-26T17:28:30Z Eyes: checkCurrentFrame():Getting screenshot as base64..
+2016-12-26T17:28:30Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:30Z Eyes: checkCurrentFrame():Done! Creating image object...
+2016-12-26T17:28:30Z Eyes: checkCurrentFrame():Done! Building required object...
+2016-12-26T17:28:30Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:30Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:30Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:30Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:30Z Eyes: <init>():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:30Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:30Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:30Z Eyes: <init>():Done!
+2016-12-26T17:28:30Z Eyes: checkCurrentFrame():Done!
+2016-12-26T17:28:30Z Eyes: checkWindowBase():CheckWindowBase(regionProvider, 'test frame0', false, -1)
+2016-12-26T17:28:30Z Eyes: checkWindowBase():Calling match window...
+2016-12-26T17:28:30Z Eyes: matchWindow():retryTimeout = 2000
+2016-12-26T17:28:30Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:30Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:30Z Eyes: getScreenshot():Check frame/element requested
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():getStitchedRegion()
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Region to check: (37, 43) 970x397
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Coordinates type: SCREENSHOT_AS_IS
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:30Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Getting top/left image...
+2016-12-26T17:28:30Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:30Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:30Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Done! Creating screenshot object...
+2016-12-26T17:28:30Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:30Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:30Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:30Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:30Z Eyes: <init>():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:30Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:30Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:30Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:30Z Eyes: <init>():Done!
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Done! Getting region in screenshot...
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Done! Region in screenshot: (37, 43) 970x397
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Region after intersect: (37, 43) 970x397
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getEntireSize():Entire size: 921x501
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Entire size of region context: 921x501
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Total size: 921x501, image part size: 970x347
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Creating stitchedImage container. Size: 921x501
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Done! Adding initial screenshot..
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Initial part:(0,0)[970 x 397]
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Getting the rest of the image parts...
+2016-12-26T17:28:30Z Eyes: getStitchedRegion():Taking screenshot for (0, 347) 921x154
+2016-12-26T17:28:30Z Eyes: setPosition():Scrolling to (0, 347)
+2016-12-26T17:28:30Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:30Z Eyes: executeScript():Done!
+2016-12-26T17:28:30Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:31Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:31Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:31Z Eyes: executeScript():Done!
+2016-12-26T17:28:31Z Eyes: getCurrentPosition():Current position: (0, 105)
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Set position to (0, 105)
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Getting image...
+2016-12-26T17:28:31Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:31Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:31Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Stitching part into the image container...
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Stitching done!
+2016-12-26T17:28:31Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:31Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:31Z Eyes: executeScript():Done!
+2016-12-26T17:28:31Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:31Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:31Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:31Z Eyes: executeScript():Done!
+2016-12-26T17:28:31Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Extracted entire size: 921x501
+2016-12-26T17:28:31Z Eyes: getStitchedRegion():Actual stitched size: 970x502
+2016-12-26T17:28:31Z Eyes: getScreenshot():Building screenshot object...
+2016-12-26T17:28:31Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:31Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:31Z Eyes: <init>():Done!
+2016-12-26T17:28:31Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:31Z Eyes: getAppOutputWithScreenshot():Done getting screenshot!
+2016-12-26T17:28:31Z Eyes: getAppOutputWithScreenshot():Compressing screenshot...
+2016-12-26T17:28:31Z Eyes: getAppOutputWithScreenshot():Done! Getting title...
+2016-12-26T17:28:31Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:31Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:32Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:32Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:32Z Eyes: getScreenshot():Check frame/element requested
+2016-12-26T17:28:32Z Eyes: getStitchedRegion():getStitchedRegion()
+2016-12-26T17:28:32Z Eyes: getStitchedRegion():Region to check: (37, 43) 970x397
+2016-12-26T17:28:32Z Eyes: getStitchedRegion():Coordinates type: SCREENSHOT_AS_IS
+2016-12-26T17:28:32Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:32Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:32Z Eyes: executeScript():Done!
+2016-12-26T17:28:32Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:32Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:32Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:32Z Eyes: executeScript():Done!
+2016-12-26T17:28:32Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:32Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:32Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:32Z Eyes: executeScript():Done!
+2016-12-26T17:28:32Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:32Z Eyes: getStitchedRegion():Getting top/left image...
+2016-12-26T17:28:32Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:33Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:33Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done! Creating screenshot object...
+2016-12-26T17:28:33Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:33Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:33Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:33Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:33Z Eyes: <init>():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:33Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:33Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:33Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:33Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:33Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:33Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:33Z Eyes: <init>():Done!
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done! Getting region in screenshot...
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done! Region in screenshot: (37, 43) 970x397
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Region after intersect: (37, 43) 970x397
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: getEntireSize():Entire size: 921x501
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Entire size of region context: 921x501
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Total size: 921x501, image part size: 970x347
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Creating stitchedImage container. Size: 921x501
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done! Adding initial screenshot..
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Initial part:(0,0)[970 x 397]
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Getting the rest of the image parts...
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Taking screenshot for (0, 347) 921x154
+2016-12-26T17:28:33Z Eyes: setPosition():Scrolling to (0, 347)
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: getCurrentPosition():Current position: (0, 105)
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Set position to (0, 105)
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Getting image...
+2016-12-26T17:28:33Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:33Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:33Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Stitching part into the image container...
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Stitching done!
+2016-12-26T17:28:33Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:33Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:33Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:33Z Eyes: executeScript():Done!
+2016-12-26T17:28:33Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Extracted entire size: 921x501
+2016-12-26T17:28:33Z Eyes: getStitchedRegion():Actual stitched size: 970x502
+2016-12-26T17:28:33Z Eyes: getScreenshot():Building screenshot object...
+2016-12-26T17:28:33Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:33Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:33Z Eyes: <init>():Done!
+2016-12-26T17:28:33Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:33Z Eyes: getAppOutputWithScreenshot():Done getting screenshot!
+2016-12-26T17:28:33Z Eyes: getAppOutputWithScreenshot():Compressing screenshot...
+2016-12-26T17:28:33Z Eyes: getAppOutputWithScreenshot():Done! Getting title...
+2016-12-26T17:28:33Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:33Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:34Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:34Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:34Z Eyes: getScreenshot():Check frame/element requested
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():getStitchedRegion()
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Region to check: (37, 43) 970x397
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Coordinates type: SCREENSHOT_AS_IS
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:34Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:34Z Eyes: executeScript():Done!
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:34Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:34Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:34Z Eyes: executeScript():Done!
+2016-12-26T17:28:34Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:34Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:34Z Eyes: executeScript():Done!
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Getting top/left image...
+2016-12-26T17:28:34Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:34Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:34Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Done! Creating screenshot object...
+2016-12-26T17:28:34Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:34Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:34Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:34Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:34Z Eyes: <init>():Done!
+2016-12-26T17:28:34Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:34Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:34Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:34Z Eyes: executeScript():Done!
+2016-12-26T17:28:34Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:34Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:34Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:34Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:34Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:34Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:34Z Eyes: <init>():Done!
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Done! Getting region in screenshot...
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Done! Region in screenshot: (37, 43) 970x397
+2016-12-26T17:28:34Z Eyes: getStitchedRegion():Region after intersect: (37, 43) 970x397
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: getEntireSize():Entire size: 921x501
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Entire size of region context: 921x501
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Total size: 921x501, image part size: 970x347
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Creating stitchedImage container. Size: 921x501
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Done! Adding initial screenshot..
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Initial part:(0,0)[970 x 397]
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:35Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Getting the rest of the image parts...
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Taking screenshot for (0, 347) 921x154
+2016-12-26T17:28:35Z Eyes: setPosition():Scrolling to (0, 347)
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:35Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: getCurrentPosition():Current position: (0, 105)
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Set position to (0, 105)
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Getting image...
+2016-12-26T17:28:35Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:35Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:35Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Stitching part into the image container...
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Stitching done!
+2016-12-26T17:28:35Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:35Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:35Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:35Z Eyes: executeScript():Done!
+2016-12-26T17:28:35Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Extracted entire size: 921x501
+2016-12-26T17:28:35Z Eyes: getStitchedRegion():Actual stitched size: 970x502
+2016-12-26T17:28:35Z Eyes: getScreenshot():Building screenshot object...
+2016-12-26T17:28:35Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:35Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:35Z Eyes: <init>():Done!
+2016-12-26T17:28:35Z Eyes: getScreenshot():Done!
+2016-12-26T17:28:35Z Eyes: getAppOutputWithScreenshot():Done getting screenshot!
+2016-12-26T17:28:35Z Eyes: getAppOutputWithScreenshot():Compressing screenshot...
+2016-12-26T17:28:35Z Eyes: getAppOutputWithScreenshot():Done! Getting title...
+2016-12-26T17:28:35Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:35Z Eyes: getAppOutputWithScreenshot():Done!
+2016-12-26T17:28:36Z Eyes: matchWindow():Completed in  5.00 seconds
+2016-12-26T17:28:36Z Eyes: checkWindowBase():MatchWindow Done!
+2016-12-26T17:28:36Z Eyes: checkWindowBase():Mismatch! (test frame0)
+2016-12-26T17:28:36Z Eyes: checkWindowBase():Done!
+2016-12-26T17:28:36Z Eyes: checkFrame():Switching back to parent frame
+2016-12-26T17:28:36Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:36Z Eyes: parentFrame():EyesTargetLocator.parentFrame()
+2016-12-26T17:28:36Z Eyes: <init>():Frame chain copy constructor (size 1)
+2016-12-26T17:28:36Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:36Z Eyes: <init>():Done!
+2016-12-26T17:28:36Z Eyes: parentFrame():Making preparations..
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():willSwitchToFrame()
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Parent frame.
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Done!
+2016-12-26T17:28:36Z Eyes: parentFrame():Done! Switching to parent frame..
+2016-12-26T17:28:36Z Eyes: parentFrame():Done!
+2016-12-26T17:28:36Z Eyes: checkFrame():Done!
+2016-12-26T17:28:36Z Eyes: checkFrame():checkFrame(framePath, -1, 'test frame1')
+2016-12-26T17:28:36Z Eyes: <init>():Frame chain copy constructor (size 0)
+2016-12-26T17:28:36Z Eyes: <init>():Done!
+2016-12-26T17:28:36Z Eyes: checkFrame():Switching to parent frame according to frames path..
+2016-12-26T17:28:36Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:36Z Eyes: frames():EyesTargetLocator.frames(framesPath)
+2016-12-26T17:28:36Z Eyes: frames():Switching to frame...
+2016-12-26T17:28:36Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:36Z Eyes: frame():EyesTargetLocator.frame('frame_to_test')
+2016-12-26T17:28:36Z Eyes: frame():Getting frames by name...
+2016-12-26T17:28:36Z Eyes: frame():No frames Found! Trying by id...
+2016-12-26T17:28:36Z Eyes: frame():Done! Making preparations..
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():willSwitchToFrame()
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Frame
+2016-12-26T17:28:36Z Eyes: getLocation():BordersAdditionFrameLocationProvider(logger, element, (35, 71))
+2016-12-26T17:28:36Z Eyes: getLocation():Get element border left width...
+2016-12-26T17:28:36Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:36Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:36Z Eyes: executeScript():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():border-left-width: 2
+2016-12-26T17:28:36Z Eyes: getLocation():Get element's border top width...
+2016-12-26T17:28:36Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:36Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:36Z Eyes: executeScript():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():border-top-width: 2
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():Current position: (0, 30)
+2016-12-26T17:28:36Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Done!
+2016-12-26T17:28:36Z Eyes: frame():Done! Switching to frame...
+2016-12-26T17:28:36Z Eyes: frame():Done!
+2016-12-26T17:28:36Z Eyes: frames():Done!
+2016-12-26T17:28:36Z Eyes: frames():Done switching into nested frames!
+2016-12-26T17:28:36Z Eyes: checkFrame():Done! Calling checkFrame..
+2016-12-26T17:28:36Z Eyes: checkFrame():CheckFrame(frame_to_test, -1, 'test frame1')
+2016-12-26T17:28:36Z Eyes: checkFrame():Switching to frame with name/id: frame_to_test ...
+2016-12-26T17:28:36Z Eyes: switchTo():switchTo()
+2016-12-26T17:28:36Z Eyes: frame():EyesTargetLocator.frame('frame_to_test')
+2016-12-26T17:28:36Z Eyes: frame():Getting frames by name...
+2016-12-26T17:28:36Z Eyes: frame():No frames Found! Trying by id...
+2016-12-26T17:28:36Z Eyes: frame():Done! Making preparations..
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():willSwitchToFrame()
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Frame
+2016-12-26T17:28:36Z Eyes: getLocation():BordersAdditionFrameLocationProvider(logger, element, (101, 71))
+2016-12-26T17:28:36Z Eyes: getLocation():Get element border left width...
+2016-12-26T17:28:36Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:36Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:36Z Eyes: executeScript():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():border-left-width: 2
+2016-12-26T17:28:36Z Eyes: getLocation():Get element's border top width...
+2016-12-26T17:28:36Z Eyes: getLocation():Element is an EyesWebElement, using 'getComputedStyle'.
+2016-12-26T17:28:36Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:36Z Eyes: executeScript():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getLocation():border-top-width: 2
+2016-12-26T17:28:36Z Eyes: getLocation():Done!
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:36Z Eyes: <init>():Frame(logger, reference, 0.8276739004385025-1, (103, 73), 750x400, (0, 0))
+2016-12-26T17:28:36Z Eyes: willSwitchToFrame():Done!
+2016-12-26T17:28:36Z Eyes: frame():Done! Switching to frame...
+2016-12-26T17:28:36Z Eyes: frame():Done!
+2016-12-26T17:28:36Z Eyes: checkFrame():Done.
+2016-12-26T17:28:36Z Eyes: checkCurrentFrame():CheckCurrentFrame(-1, 'test frame1')
+2016-12-26T17:28:36Z Eyes: checkCurrentFrame():Getting screenshot as base64..
+2016-12-26T17:28:36Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:36Z Eyes: checkCurrentFrame():Done! Creating image object...
+2016-12-26T17:28:36Z Eyes: checkCurrentFrame():Done! Building required object...
+2016-12-26T17:28:36Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:36Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:36Z Eyes: <init>():Frame chain copy constructor (size 2)
+2016-12-26T17:28:36Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:36Z Eyes: <init>():Frame(logger, reference, 0.8276739004385025-1, (103, 73), 750x400, (0, 0))
+2016-12-26T17:28:36Z Eyes: <init>():Done!
+2016-12-26T17:28:36Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:36Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:36Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:36Z Eyes: executeScript():Done!
+2016-12-26T17:28:36Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Getting next frame...
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:36Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:36Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:36Z Eyes: <init>():Done!
+2016-12-26T17:28:36Z Eyes: checkCurrentFrame():Done!
+2016-12-26T17:28:36Z Eyes: checkWindowBase():CheckWindowBase(regionProvider, 'test frame1', false, -1)
+2016-12-26T17:28:36Z Eyes: checkWindowBase():Calling match window...
+2016-12-26T17:28:36Z Eyes: matchWindow():retryTimeout = 2000
+2016-12-26T17:28:38Z Eyes: getAppOutputWithScreenshot():getting screenshot...
+2016-12-26T17:28:38Z Eyes: getScreenshot():getScreenshot()
+2016-12-26T17:28:38Z Eyes: getScreenshot():Check frame/element requested
+2016-12-26T17:28:38Z Eyes: getStitchedRegion():getStitchedRegion()
+2016-12-26T17:28:38Z Eyes: getStitchedRegion():Region to check: (140, 116) 750x324
+2016-12-26T17:28:38Z Eyes: getStitchedRegion():Coordinates type: SCREENSHOT_AS_IS
+2016-12-26T17:28:38Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:38Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:38Z Eyes: executeScript():Done!
+2016-12-26T17:28:38Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:38Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:38Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:38Z Eyes: executeScript():Done!
+2016-12-26T17:28:38Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Getting top/left image...
+2016-12-26T17:28:39Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:39Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:39Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done! Creating screenshot object...
+2016-12-26T17:28:39Z Eyes: getDefaultContentViewportSize():getDefaultContentViewportSize()
+2016-12-26T17:28:39Z Eyes: getDefaultContentViewportSize():Using cached viewport size: 1024x440
+2016-12-26T17:28:39Z Eyes: <init>():Frame chain copy constructor (size 2)
+2016-12-26T17:28:39Z Eyes: <init>():Frame(logger, reference, 0.615220367657457-1, (37, 73), 970x400, (0, 30))
+2016-12-26T17:28:39Z Eyes: <init>():Frame(logger, reference, 0.8276739004385025-1, (103, 73), 750x400, (0, 0))
+2016-12-26T17:28:39Z Eyes: <init>():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentFrameSize():getCurrentFrameSize()
+2016-12-26T17:28:39Z Eyes: getCurrentFrameSize():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Getting first frame..
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Iterating over frames..
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Getting next frame...
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:39Z Eyes: calcFrameLocationInScreenshot():Done!
+2016-12-26T17:28:39Z Eyes: <init>():Calculating frame window..
+2016-12-26T17:28:39Z Eyes: <init>():Done!
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done! Getting region in screenshot...
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done! Region in screenshot: (140, 116) 750x324
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Region after intersect: (140, 116) 750x324
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: getEntireSize():Entire size: 716x396
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Entire size of region context: 716x396
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Total size: 716x396, image part size: 750x274
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Creating stitchedImage container. Size: 716x396
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done! Adding initial screenshot..
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Initial part:(0,0)[750 x 324]
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Getting the rest of the image parts...
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Taking screenshot for (0, 274) 716x122
+2016-12-26T17:28:39Z Eyes: setPosition():Scrolling to (0, 274)
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():getCurrentScrollPosition()
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: getCurrentPosition():Current position: (0, 0)
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Set position to (0, 0)
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Getting image...
+2016-12-26T17:28:39Z Eyes: getImage():Getting screenshot as base64...
+2016-12-26T17:28:39Z Eyes: normalizeRotation():Trying to automatically normalize rotation...
+2016-12-26T17:28:39Z Eyes: getImage():Done getting base64! Creating BufferedImage..
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Stitching part into the image container...
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Done!
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Stitching done!
+2016-12-26T17:28:39Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:39Z Eyes: setPosition():Scrolling to (0, 0)
+2016-12-26T17:28:39Z Eyes: executeScript():Execute script...
+2016-12-26T17:28:39Z Eyes: executeScript():Done!
+2016-12-26T17:28:39Z Eyes: setPosition():Done scrolling!
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Extracted entire size: 716x396
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Actual stitched size: 750x324
+2016-12-26T17:28:39Z Eyes: getStitchedRegion():Trimming unnecessary margins..
+2016-12-26T17:28:39Z Eyes: abortIfNotClosed():Aborting server session...
+2016-12-26T17:28:40Z Eyes: abortIfNotClosed():--- Test aborted.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.26.436382 (70eb799287ce4c2208441fc057053a5b07ceabac) on port 8104
+Only local connections are allowed.
+Dec 26, 2016 7:28:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+Dec 26, 2016 7:28:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.applitools.app.FrameTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.006 sec <<< FAILURE! - in com.applitools.app.FrameTest
+testFrame(com.applitools.app.FrameTest)  Time elapsed: 18.47 sec  <<< ERROR!
+java.awt.image.RasterFormatException: (x + width) is outside of Raster
+	at sun.awt.image.ByteInterleavedRaster.createWritableChild(ByteInterleavedRaster.java:1245)
+	at java.awt.image.BufferedImage.getSubimage(BufferedImage.java:1202)
+	at com.applitools.utils.ImageUtils.getImagePart(ImageUtils.java:164)
+	at com.applitools.eyes.FullPageCaptureAlgorithm.getStitchedRegion(FullPageCaptureAlgorithm.java:233)
+	at com.applitools.eyes.Eyes.getScreenshot(Eyes.java:1881)
+	at com.applitools.eyes.EyesBase.getAppOutputWithScreenshot(EyesBase.java:1441)
+	at com.applitools.eyes.EyesBase.access$000(EyesBase.java:16)
+	at com.applitools.eyes.EyesBase$1.getAppOutput(EyesBase.java:1004)
+	at com.applitools.eyes.MatchWindowTask.matchWindow(MatchWindowTask.java:117)
+	at com.applitools.eyes.EyesBase.checkWindowBase(EyesBase.java:1012)
+	at com.applitools.eyes.Eyes.checkCurrentFrame(Eyes.java:1209)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1275)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1418)
+	at com.applitools.eyes.Eyes.checkFrame(Eyes.java:1432)
+	at com.applitools.app.FrameTest.testFrame(FrameTest.java:54)
+
