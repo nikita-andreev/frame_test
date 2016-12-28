@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:nikita-andreev/Eyes.Selenium.Ruby.git
-  revision: d1943b22529595ec40bcdcd2fcfb9c79525f7165
-  ref: d1943b2
+  revision: 20ec4469db6bba221a7ec3df0639dee89a570338
+  ref: 20ec4469db6bba221a7ec3df0639dee89a570338
   specs:
     eyes_selenium (2.38.0)
       chunky_png (= 1.3.6)
@@ -57,7 +57,7 @@ GEM
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
     rubyzip (1.2.0)
-    selenium-webdriver (3.0.4)
+    selenium-webdriver (3.0.5)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
