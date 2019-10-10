@@ -10,8 +10,8 @@ RSpec.describe "Capybara", type: :feature, sauce: false do
   end
 
   let(:driver) { Selenium::WebDriver.for :chrome }
-  it do |ddd|
-    eyes.open(
+  it do
+    ddd = eyes.open(
       driver: driver,
       app_name: 'frames_111',
       test_name: 'frames_test_222',
