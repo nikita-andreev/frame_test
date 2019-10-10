@@ -10,7 +10,7 @@ RSpec.describe "Capybara", type: :feature, sauce: false do
   end
 
   let(:driver) { Selenium::WebDriver.for :chrome }
-  it do
+  it do |ddd|
     eyes.open(
       driver: driver,
       app_name: 'frames_111',
@@ -18,7 +18,7 @@ RSpec.describe "Capybara", type: :feature, sauce: false do
       viewport_size: {width: 1024, height: 440}
     )
     begin
-      visit '/frames'
+      ddd.get '/frames'
       eyes.check_window('First page with all frames')
       page.execute_script "window.scrollBy(0,30)"
       eyes.check_frame(name_or_id: 'frame_to_test', tag: 'test frame0')
