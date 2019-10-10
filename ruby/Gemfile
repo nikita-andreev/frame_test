@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'eyes_selenium', git: 'git@github.com:nikita-andreev/Eyes.Selenium.Ruby.git', ref: '20ec4469db6bba221a7ec3df0639dee89a570338'
+gem 'eyes_selenium'
 gem 'capybara'
 gem 'rspec'
