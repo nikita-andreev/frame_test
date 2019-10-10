@@ -20,7 +20,7 @@ RSpec.describe "Capybara", type: :feature, sauce: false do
     begin
       ddd.get 'https://aqueous-shore-68375.herokuapp.com/frames'
       eyes.check_window('First page with all frames')
-      page.execute_script "window.scrollBy(0,30)"
+      ddd.execute_script "window.scrollBy(0,30)"
       eyes.check_frame(name_or_id: 'frame_to_test', tag: 'test frame0')
       eyes.check_frame(frames_path: ['frame_to_test', 'frame_to_test'], tag: 'test frame1')
       eyes.close
