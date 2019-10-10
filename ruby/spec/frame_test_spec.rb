@@ -1,13 +1,4 @@
-require 'capybara/rspec'
 require 'eyes_selenium'
-require 'applitools/capybara'
-
-Applitools.register_capybara_driver browser: :chrome
-
-Capybara.configure do |c|
-  c.run_server = false
-  c.app_host = 'https://aqueous-shore-68375.herokuapp.com'
-end
 
 RSpec.describe "Capybara", type: :feature, sauce: false do
   let(:eyes) do
